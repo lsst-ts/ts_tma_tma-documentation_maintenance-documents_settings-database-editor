@@ -29,6 +29,10 @@
       - [Modifying existing instance](#modifying-existing-instance)
       - [Create new instance](#create-new-instance)
       - [Remove existing instance](#remove-existing-instance)
+    - [Event systems](#event-systems)
+      - [Modifying existing event system](#modifying-existing-event-system)
+      - [Create new event system](#create-new-event-system)
+      - [Remove existing event system](#remove-existing-event-system)
 
 ## Introduction
 
@@ -289,5 +293,55 @@ Here the instances that are going to be available for the settings are managed, 
 
 - If more than one instance is going to be removed, repeat the first two steps.
 - When all the instance are modified press the *Save* button, top right of the application.
+
+  ![Save changes selected](resources/images/07_SaveChanges.png)
+
+### Event systems
+
+Here the event systems that are going to be available are managed, created, modified and deleted.
+
+![Event system tab](resources/images/22_EventSystemsTab.png)
+
+#### Modifying existing event system
+
+- Select the desired event system from the `Eventsystem list` on the right, this will load the related information on the left:
+  - Name: this is the event system name.
+  - Statechart: this is an enum defined in the *Statecharts* tab and related to the code in the PXIs, as each statechart
+    is a different code module in the PXI code.
+  - Instances: this is an enum with the instances defined in the *Instances* tab, here select the instances that will be
+    related linked to the event system.
+- Once the left part is updated, the name is changed, press the *Edit* button on the right.
+
+  ![Edit button selected](resources/images/23_EventsSystemsEdit.png)
+
+- If more than one event system is going to be modified, repeat the first two steps.
+- When all the event systems are modified press the *Save* button, top right of the application.
+
+  ![Save changes selected](resources/images/07_SaveChanges.png)
+
+#### Create new event system
+
+- Add the name for the event system.
+- Select the related statechart.
+- Select the instances that will be related linked to the event system.
+- Press the *Create* button on the right.
+
+  ![Create event system selected](resources/images/24_EventSystemsCreate.png)
+
+- This will create the new event system.
+- If more than one event system is going to be created, repeat the first two steps.
+- When all the event systems are created press the *Save* button, top right of the application.
+
+  ![Save changes selected](resources/images/07_SaveChanges.png)
+
+#### Remove existing event system
+
+- Select the desired event system from the `Eventsystem list` on the right.
+- Press the *Delete* button on the right.
+
+  ![Delete event system selected](resources/images/25_EventSystemsDelete.png)
+
+- If more than one event system is going to be removed, repeat the first two steps.
+- When all the event systems are modified press the *Save* button, top right of the application.
 
   ![Save changes selected](resources/images/07_SaveChanges.png)
