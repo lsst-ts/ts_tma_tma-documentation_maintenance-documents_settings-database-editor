@@ -164,8 +164,12 @@ Here the events managed by the event system can be modified, created or removed.
       - Type DBL/Boolean: this is the type of checking done with the outcome of the evaluation string and compared to the
         DBL Ref value. This is an enum with four values: HIGHER, LOWER, EQUAL, NOT EQUAL.
       - DBL Ref: this is the value that is compared to the outcome of the evaluation string depending on the type.
-      - Deadband: this is the deadband to avoid flickering with values that are close to the reference value.
-      - Hysteresis: this is the hysteresis for the comparison.
+      - Deadband: this is the deadband for the comparison when using the EQUAL or NOT EQUAL options from the Type
+        DBL/Boolean enum. For example for a DBL ref value of 0, a type DBL of EQUAL and a deadband of 1 would mean that
+        values between -1 and 1 will trip the event.
+      - Hysteresis: this is the hysteresis for the comparison when using the HIGHER or LOWER options from the Type
+        DBL/Boolean enum. For example for a DBL ref value of 0, a type DBL of HIGHER and a hysteresis of 1 would mean that
+        values above 0 trip the event, but they must be below -1 to deactivate the event.
   - Eventsystem: this is an enum defined in the *Event Systems* tab and related to the code in the PXIs, as each eventsystem
     is related to a different code module in the PXI code.
 - Once the left part is updated to the desired values press the *Edit* button on the right.
