@@ -40,6 +40,9 @@ This document contains the documentation for the `SettingsDatabaseEditor` applic
 modify, create or remove settings in the database, as well as events, therefore, this application can be used only by
 maintenance level users.
 
+**IMPORTANT:** modifying, creating or removing either settings or events could affect the performance of the system.
+Therefore a good understanding of the code is needed before changing anything using this low level configuration tool.
+
 ## Application location and launch
 
 The application is installed in the MCC, the server that runs both the EUI and the database itself. This application can
